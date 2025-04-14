@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>陳重嘉 | 雲端 × 網站 × 實作</title>
+  <meta name="description" content="展示雲端部署、網站設計、技能圖示與履歷內容，擁有 Apple 商務風設計與動畫效果的個人品牌網站。" />
+  <meta property="og:title" content="陳重嘉 | 雲端 × 網站 × 實作" />
+  <meta property="og:description" content="雲端部署、網站開發、履歷下載與聯絡方式一站式呈現。" />
+  <meta property="og:image" content="A_webpage_screenshot_image_showcases_Chen_Chung-Ch.png" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="theme-color" content="#ffffff" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #111;
+    }
+    .hero {
+      background-image: url('A_digital_illustration_features_an_abstract_backgr.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      padding: 140px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .hero > div {
+      position: relative;
+      z-index: 1;
+    }
+    .btn-black {
+      background-color: #000;
+      color: #fff;
+      border-radius: 50px;
+      padding: 12px 32px;
+      font-size: 16px;
+      text-decoration: none;
+    }
+    .btn-black:hover {
+      background-color: #222;
+    }
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .skills span {
+      margin: 0.3rem;
+    }
+    .portfolio-item {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .preview {
+      max-width: 100%;
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 60px 20px 20px;
+      font-size: 14px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div data-aos="fade-up">
+      <h1>嗨，我是陳重嘉</h1>
+      <p class="lead">專注雲端平台、網站架設與技術實作</p>
+      <a href="resume.pdf" class="btn-black" download>下載履歷 PDF</a>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="section-title" data-aos="fade-right">關於我</h2>
+    <p class="text-center" data-aos="fade-up">畢業於致理科技大學資料管理系，具備網站前後端開發、雲端部署、資料處理與簡報撰寫能力，並熟悉 AWS EC2、Python、Bootstrap、Git 等技術。</p>
+    <div class="text-center skills" data-aos="fade-up" data-aos-delay="100">
+      <span class="badge bg-primary">Python</span>
+      <span class="badge bg-secondary">HTML5</span>
+      <span class="badge bg-success">CSS3</span>
+      <span class="badge bg-warning text-dark">Bootstrap</span>
+      <span class="badge bg-info text-dark">MySQL</span>
+      <span class="badge bg-dark">Git</span>
+      <span class="badge bg-danger">AWS EC2</span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title" data-aos="fade-right">作品集</h2>
+    <div class="portfolio-item" data-aos="fade-up">
+      <h5>AWS EC2 部署個人網站</h5>
+      <p>從無到有建置 Ubuntu 主機，配置 Apache 與 DNS，並上架 HTML/CSS 網站。</p>
+    </div>
+    <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
+      <h5>Python 股票爬蟲工具</h5>
+      <p>使用 requests + pandas 擷取台灣證交所資料，自動更新每日股價並儲存格式化報表。</p>
+    </div>
+  </section>
+
+  <section class="text-center">
+    <h2 class="section-title" data-aos="zoom-in">網站預覽圖</h2>
+    <img src="A_webpage_screenshot_image_showcases_Chen_Chung-Ch.png" alt="網站預覽圖" class="preview" loading="lazy"/>
+  </section>
+
+  <section class="text-center">
+    <h2 class="section-title" data-aos="fade-up">聯絡我</h2>
+    <p>透過 LINE 或 Email 聯繫我</p>
+    <img src="line_qrcode_asen92806112.png" width="160" alt="LINE QR" loading="lazy"/>
+    <p class="mt-3">
+      <a href="mailto:asen92806112@gmail.com" class="btn btn-outline-dark">發送 Email</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 陳重嘉 | 個人網站展示</p>
+    <p>
+      <a href="resume.pdf" download>下載履歷</a> ·
+      <a href="https://github.com/Vanish0612" target="_blank">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>
